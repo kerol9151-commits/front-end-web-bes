@@ -10,26 +10,34 @@
     </header>
     <section>
          <h2>Cadrastre seu Currículo</h2>
-        <form action="#" method="post">
+        <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
             <p>Preencha o Formulário para se Candidatar á Vaga</p>
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <div>
+                    <label for="foto_id">Foto:</label>
+                    <input id="foto_id" name="foto" type="file" accept="image/">
+                </div>
+
+            <div>
                 <label for="nome_id">Nome Completo:</label>
-                <input id="nome_id" name= type="text">
+                <input id="nome_id" name= type="text placeholder="Kerolayne Goudinho">
                 </div>
                 <div>
                 <label for="telefone_id">Telefone:</label>
-                <input id="telefone_id" name="telefone" type="tel">
-                </div>
+                <input id="telefone_id" name="telefone" type="tel" required>
+            </div>
+
                 <div>
                     <label for="email_id">Email:</label>
                     <input id="email_id" name="email" type="email">
                 </div>
+
                 <div>
                     <label for="data_nasc_id">Data de Nascimento:</label>
                     <input id="data_nasc_id" name="data_nasc" type="date">
                 </div>
+
                 <fieldset>
                     <legend>Enderenço:</legend>
                     <div>
@@ -73,7 +81,6 @@
                            value="junior">
                 <label for="nivel_junior_id">Júnior</label>
                 </div>
-
                 <fieldset>
                     <legend>Tecnologias que Domina:</legend>
                     <div>
@@ -94,7 +101,6 @@
                         value="js">
                     <label for="tec_js_id">JS</label>
                     </div>
-
                     <fieldset>
                         <legend>Grau de Intrução</legend>
                         <div>
@@ -112,10 +118,7 @@
             <div>
                 <button type="reset">Limpar Dados</button>
                 <button type="submit">Enviar Candidatura</button>
-            </div>
-
-
-
+               </div>
         </form>
     </section>   
 
