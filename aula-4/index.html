@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <title>Recrutamento de Novos Membros</title>
+    <meta charset="UTF-8">   
+</head>
+<body>
+    <header>
+        <h1>INICIATIVA VINGADORES</h1>
+    </header>
+    <section>
+        <h2>Cadastre seu Currículo</h2>
+        <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+                <p>Preencha o Formulario para se Cndidatar a Vaga</p>
+                <fieldset>
+                    <legend>
+                        Dados Pessoais
+                    </legend>
+                    <div>
+                        <label for="foto_id">Foto: </label>
+                        <input id="foto_id" name="foto" type="file" accept="image/" >
+                    </div>
+                 <div>
+                    <label for="name_id">Nome (Codinome) </label>
+                    <input id="nome_id" name="nome" type="text" placeholder="Ex: Tony Stark">
+                 </div>
+                 <div>
+                    <label for="telefone_id"> Telefone: </label>
+                    <input id="telefone" name="telefone" type="tel" placeholder="(11)9123-5878" required>
+                 </div>
+                 <div>
+                    <label for="email_id">Email:</label>
+                    <input id="email_id" name="email" type="email" placeholder="Ex: playboyzinho@gmail.com">
+                </div>
+                 <div>
+                    <label for="data_nasc_id">Data de Nascimento:</label>
+                    <input id="data_nasc_id" name="data_nasc" type="date">
+                </div>
+                <br>
+                <fieldset>
+                    <legend>Endereço da Base:</legend>
+                    <div>
+                        <label for="logradouro_id">Logradouro:</label>
+                        <input id="logradouro_id" name="logradouro" type="text" placeholder="Ex: Avenida dos Vingadores">
+                    </div>
+                    <div>
+                        <label for="cidade_id">Cidade-UF:</label>
+                        <input id="cidade_id" name="cidade" type="text" placeholder="Ex: Nova York-NY">
+                    </div>
+                    <div>
+                        <label for="numero_id">Número:</label>
+                        <input id="numero_id" name="numero" type="number" placeholder="Ex: 890">
+                    </div>
+                </fieldset>
+            </fieldset>
+             <fieldset>
+                <legend>Sobre o Candidato</legend>
+                <div>
+                    <label for="resumo_id">Conte sua Origem e Seus Poderes:</label>
+                    <textarea id="resumo_id"
+                     name="resumo"
+                     rows="4"
+                     cols="50"
+                     placeholder="Ex: Sou um empresário e engenheiro genial, depois de ser sequestrado..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nível Desejado</legend>
+                <div>
+                    <input id="nivel_recruta_id"
+                           name="nivel"
+                           type="radio"
+                           value="recruta">
+                    <label for="nivel_recruta_id">Recruta</label>
+                </div>
+
+                <div>
+                    <input id="nivel_agente_id"
+                           name="nivel"
+                           type="radio"
+                           value="agente">
+                    <label for="nivel_agente_id">Agente de Campo</label>
+                </div>
+
+                <div>
+                    <input id="nivel_vingador_id"
+                           name="nivel"
+                           type="radio"
+                           value="vingador">
+                    <label for="nivel_vingador_id">Vingador Titular</label>
+                </div>
+                <br>
+
+                <fieldset>
+                    <legend>Habilidades que Domina:</legend>
+                    <div>
+                        <input id="hab_forca_id"
+                        name="habilidades"
+                        type="checkbox"
+                        value="forca_sobre-humana">
+                    <label for="hab_forca_id">Força Sobre-humana</label>
+                    </div>
+                    <div>
+                        <input id="hab_tecnologia_id"
+                        name="habilidades"
+                        type="checkbox"
+                        value="tecnologia_avancada">
+                    <label for="hab_tecnologia_id">Tecnologia Avançada</label>
+                    </div>
+                    <div>
+                        <input id="hab_combate_id"
+                        name="habilidades"
+                        type="checkbox"
+                        value="combate_corpo_a_corpo">
+                    <label for="hab_combate_id">Combate Corpo a Corpo</label>
+                    </div>
+                    <div>
+                        <input id="hab_magia_id"
+                        name="habilidades"
+                        type="checkbox"
+                        value="magia">
+                    <label for="hab_magia_id">Magia</label>
+                    </div>
+                    <div>
+                        <input id="hab_pontaria_id"
+                        name="habilidades"
+                        type="checkbox"
+                        value="pontaria">
+                    <label for="hab_pontaria_id">Pontaria de Elite</label>
+                    </div>
+                    <div>
+                        <input id="hab_voo_id"
+                        name="habilidades"
+                        type="checkbox"
+                        value="voo">
+                    <label for="hab_voo_id">Voo</label>
+                    </div>
+                    <br>
+
+                    <fieldset>
+                        <legend>Grau de Instrução</legend>
+                        <div>
+                            <label for="escolaridade_id">Escolaridade:</label>
+                            <select id="escolaridade_id" name="escolaridade">
+                                <option value="xavier">Instituto Xavier para Jovens Superdotados</option>
+                                <option value="shield">Academia S.H.I.E.L.D.</option>
+                                <option value="asgard">Formação em Asgard</option>
+                                <option value="stark">Stark Industries — Programa de Estágio</option>
+                                
+                            </select>
+                        </div>
+                    </fieldset>
+                     </fieldset>
+            </fieldset>
+            <br>
+            <div>
+                <button type="reset">Limpar Dados</button>
+                <button type="submit">Enviar Candidatura</button>
+               </div>
+        </form>
+    </section>   
+
+    <main>
+       
+    </main>
+    <footer>
+        <p>Iniciativa Vingadores &mdash; Todos os Direitos Reservados &copy;</p>
+    </footer>
+</body>
+</html>
